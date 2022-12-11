@@ -1,0 +1,40 @@
+.our-skills {
+  padding-top: 0px;
+  padding-bottom: 94px;
+}
+
+.our-skills__headline {
+  font-size: 36px;
+  line-height: 1;
+  text-align: center;
+  color: var(--black-clr);
+  margin-bottom: 50px;
+}
+
+.our-skills__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  gap: 30px;
+}
+
+.our-skills__list--item {
+  position: relative;
+}
+
+.our-skills__list--overlay {
+  width: 370px;
+  height: 70px;
+  background-color: rgba(0 0 0 / 0.5);
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.our-skills__list--overlay p {
+  color: var(--white-clr);
+  font-weight: 700;
+}
