@@ -1,0 +1,152 @@
+.menu-toggle {
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+
+  @media (min-width: 768px) {
+    & {
+      display: none;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 40px;
+  background-color: #fff;
+  z-index: 999;
+
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+
+  &.is-open {
+    transform: translateX(0);
+  }
+
+  & .menu-toggle {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    color: #212121;
+  }
+}
+
+.mobile-menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  &__link {
+    color: var(--black-clr);
+    display: inline-block;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.17em;
+    letter-spacing: 0.02em;
+  }
+
+  &__active-page {
+    color: var(--blue-clr);
+  }
+}
+
+.mobile-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  position: absolute;
+  bottom: 134px;
+
+  &__tel {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.18em;
+    letter-spacing: 0.02em;
+    color: var(--blue-clr);
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: var(--blue-clr);
+    }
+  }
+
+  &__email {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17em;
+    letter-spacing: 0.02em;
+    color: var(--grey1-clr);
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: var(--blue-clr);
+    }
+  }
+}
+
+.mobile-socials {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  bottom: 48px;
+  flex-wrap: wrap;
+
+  &__link {
+    color: var(--blue-clr);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22em;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+  }
+
+  &__bar::after {
+    content: "";
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    height: 22px;
+    margin-left: 10px;
+  }
+}
+
+.mobile-menu__link {
+  color: inherit;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17em;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: var(--blue-clr);
+  }
+}
+
+.mobile-menu__active-page {
+  color: var(--blue-clr);
+}
