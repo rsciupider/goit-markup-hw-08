@@ -21,7 +21,7 @@
   <body>
     <!---------------------------------------HEADER--------------------------------------->
 
-    <header class="header">
+    <!-- <header class="header">
       <div class="container">
         <div class="header__bar">
           <div class="header__menu">
@@ -100,9 +100,11 @@
           </button>
         </div>
       </div>
-    </header>
+    </header> -->
 
-    <!-- <main>
+    <main>
+      <!-- ------------------------------------------BANNER---------------------------------------------------- -->
+
       <section class="banner-section">
         <div class="container">
           <div class="banner-section__headline">
@@ -117,70 +119,71 @@
             >
               Zamów usługe
             </button>
-            <div class="backdrop is-hidden" data-modal>
-              <div class="modal">
-                <button class="modal__btn" data-modal-close>
-                  <svg class="modal__btn--close">
-                    <use href="./images/icons.svg#icon-close"></use>
-                  </svg>
-                </button>
-                <h2 class="modal__headline">
-                  Zostaw swoje dane w formularzu poniżej
-                </h2>
-                <form class="modal__form">
-                  <fieldset class="modal__fieldset">
-                    <label class="modal__label" for="name">Imie</label>
-                    <svg class="modal__icon">
-                      <use href="./images/icons.svg#icon-person"></use>
-                    </svg>
-                    <input class="modal__input" type="text" id="name" />
-                  </fieldset>
-                  <fieldset class="modal__fieldset">
-                    <label class="modal__label" for="phone">Telefon</label>
-                    <svg class="modal__icon">
-                      <use href="./images/icons.svg#icon-phone"></use>
-                    </svg>
-                    <input class="modal__input" type="tel" id="phone" />
-                  </fieldset>
-                  <fieldset class="modal__fieldset">
-                    <label class="modal__label" for="e-mail">Email</label>
-                    <svg class="modal__icon">
-                      <use href="./images/icons.svg#icon-email"></use>
-                    </svg>
-                    <input class="modal__input" type="email" id="e-mail" />
-                  </fieldset>
-                  <fieldset class="modal__fieldset">
-                    <label class="modal__label" for="textarea">Komentarz</label>
-                    <textarea
-                      class="modal__comment"
-                      placeholder="Wprowadź tekst"
-                    ></textarea>
-                  </fieldset>
-                  <label class="checkbox" for="legal">
-                    <input
-                      class="checkbox__legal--input"
-                      type="checkbox"
-                      id="legal"
-                    />
-                    <svg class="checkbox__icon">
-                      <use href="./images/icons.svg#icon-check"></use>
-                    </svg>
-                    Oświadczam iż akceptuję
-                    <a class="checkbox__legal--link" href="#">Regulamin</a> i
-                    <a class="checkbox__legal--link" href="#"
-                      >Politykę Prywatności</a
-                    >
-                  </label>
-                  <button class="modal__send legal-btn" type="submit">
-                    Wyślij
-                  </button>
-                </form>
-              </div>
-            </div>
           </div>
         </div>
       </section>
-      <section class="our-attributes">
+      <!-- --------------------------------------MODAL------------------------------------------------------- -->
+
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button class="modal__btn" data-modal-close>
+            <svg class="modal__btn--close">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <h2 class="modal__headline">
+            Zostaw swoje dane w formularzu poniżej
+          </h2>
+          <form class="modal__form">
+            <fieldset class="modal__fieldset">
+              <label class="modal__label" for="name">Imie</label>
+              <svg class="modal__icon">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+              <input class="modal__input" type="text" id="name" />
+            </fieldset>
+            <fieldset class="modal__fieldset">
+              <label class="modal__label" for="phone">Telefon</label>
+              <svg class="modal__icon">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+              <input class="modal__input" type="tel" id="phone" />
+            </fieldset>
+            <fieldset class="modal__fieldset">
+              <label class="modal__label" for="e-mail">Email</label>
+              <svg class="modal__icon">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+              <input class="modal__input" type="email" id="e-mail" />
+            </fieldset>
+            <fieldset class="modal__fieldset">
+              <label class="modal__label" for="textarea">Komentarz</label>
+              <textarea
+                class="modal__comment"
+                placeholder="Wprowadź tekst"
+              ></textarea>
+            </fieldset>
+            <label class="checkbox" for="legal">
+              <input
+                class="checkbox__legal--input"
+                type="checkbox"
+                id="legal"
+              />
+              <svg class="checkbox__icon">
+                <use href="./images/icons.svg#icon-check"></use>
+              </svg>
+              Oświadczam iż akceptuję
+              <a class="checkbox__legal--link" href="#">Regulamin</a> i
+              <a class="checkbox__legal--link" href="#">Politykę Prywatności</a>
+            </label>
+            <button class="modal__send legal-btn" type="submit">Wyślij</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- -------------------------------------------OUR ATTRIBUTES---------------------------------------------- -->
+
+      <!-- <section class="our-attributes">
         <div class="container">
           <h2></h2>
 
@@ -235,15 +238,18 @@
             </li>
           </ul>
         </div>
-      </section>
-      <section class="our-skills">
+      </section> -->
+
+      <!-- ---------------------------------------------OUR SKILLS-------------------------------------------- -->
+
+      <!-- <section class="our-skills">
         <div class="container">
           <div class="section-column-position">
             <h2 class="our-skills__headline">Czym się zajmujemy</h2>
             <ul class="our-skills__list">
               <li class="our-skills__list--item">
                 <img
-                  src="./images/img.jpg"
+                  src="./images/keyboard.jpg"
                   alt="Zdjecie1"
                   width="370"
                   height="294"
@@ -254,7 +260,7 @@
               </li>
               <li class="our-skills__list--item">
                 <img
-                  src="./images/box2.jpg"
+                  src="./images/smartphone.jpg"
                   alt="Zdjecie2"
                   width="370"
                   height="294"
@@ -265,7 +271,7 @@
               </li>
               <li class="our-skills__list--item">
                 <img
-                  src="./images/box3.jpg"
+                  src="./images/tablet.jpg"
                   alt="Zdjecie3"
                   width="370"
                   height="294"
@@ -277,14 +283,17 @@
             </ul>
           </div>
         </div>
-      </section>
-      <section class="our-team">
+      </section> -->
+
+      <!-- ----------------------------------------------OUR TEAM-------------------------------------------- -->
+
+      <!-- <section class="our-team">
         <div class="container">
           <h2 class="our-team__headline">Nasz zespół</h2>
           <ul class="our-team__workers">
             <li class="our-team__card">
               <img
-                src="./images/worker1.jpg"
+                src="./images/productdesigner.jpg"
                 alt="Zdjecie przedstawiajace Johna Doe"
                 width="270"
                 height="260"
@@ -326,7 +335,7 @@
             </li>
             <li class="our-team__card">
               <img
-                src="./images/worker2.jpg"
+                src="./images/frontend.jpg"
                 alt="Zdjecie przedstawiajace Johna Doe"
                 width="270"
                 height="260"
@@ -368,7 +377,7 @@
             </li>
             <li class="our-team__card">
               <img
-                src="./images/worker3.jpg"
+                src="./images/marketing.jpg"
                 alt="Zdjecie przedstawiajace Johna Doe"
                 width="270"
                 height="260"
@@ -410,7 +419,7 @@
             </li>
             <li class="our-team__card">
               <img
-                src="./images/worker4.jpg"
+                src="./images/uidesigner.jpg"
                 alt="Zdjecie przedstawiajace Johna Doe"
                 width="270"
                 height="260"
@@ -452,8 +461,11 @@
             </li>
           </ul>
         </div>
-      </section>
-      <section class="our-clients">
+      </section> -->
+
+      <!-- ----------------------------------------------OUR CLIENTS-------------------------------------------- -->
+
+      <!-- <section class="our-clients">
         <div class="container">
           <h2 class="our-clients__headline">Nasi klienci</h2>
           <ul class="our-clients__list">
@@ -513,9 +525,12 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
-    <footer class="footer">
+
+    <!-- -------------------------------------------FOOTER--------------------------------------------------- -->
+
+    <!-- <footer class="footer">
       <div class="container footer__bar">
         <div>
           <a
@@ -600,7 +615,7 @@
     </footer> -->
     <!---------------------------------------MOBILE MENU--------------------------------------->
 
-    <div class="menu-container js-menu-container" id="mobile-menu">
+    <!-- <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
         <svg
           fill="currentColor"
@@ -658,7 +673,7 @@
         </li>
         <li><a href="" class="mobile-socials__link link">LinkedIn</a></li>
       </ul>
-    </div>
+    </div> -->
 
     <!---------------------------------------SCRIPTS--------------------------------------->
 
