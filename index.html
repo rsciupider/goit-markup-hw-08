@@ -292,53 +292,84 @@
           <h2 class="our-team__headline">Nasz zespół</h2>
           <ul class="our-team__workers">
             <li class="our-team__card">
-              <img
-                src="./images/productdesigner.jpg"
-                alt="Zdjecie przedstawiajace Johna Doe"
-                width="270"
-                height="260"
-              />
-              <div class="our-team__description">
-                <h3 class="our-team__description--name">John Doe</h3>
-                <p class="our-team__description--job">Product Designer</p>
-                <ul class="social-media">
-                  <li>
-                    <a class="social-media__icon" href="#">
-                      <svg class="social-media__icon--small">
-                        <use href="./images/icons.svg#icon-instagram"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="social-media__icon" href="#">
-                      <svg class="social-media__icon--small">
-                        <use href="./images/icons.svg#icon-twitter"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="social-media__icon" href="#">
-                      <svg class="social-media__icon--small">
-                        <use href="./images/icons.svg#icon-facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="social-media__icon" href="#">
-                      <svg class="social-media__icon--small">
-                        <use href="./images/icons.svg#icon-linkedin"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
+              <figure>
+                <img
+                  src="/images/productdesigner-mobile.jpg"
+                  srcset="
+                    ./images/productdesigner-mobile.jpg    450w,
+                    ./images/productdesigner-mobile@2x.jpg 900w,
+                    ./images/productdesigner-tablet.jpg    354w,
+                    ./images/productdesigner-tablet@2x.jpg 708w,
+                    ./images/productdesigner.jpg           270w,
+                    ./images/productdesigner@2x.jpg        540w
+                  "
+                  sizes="
+                (max-width: 767px) 450px,
+                ((max-width: 767px) and (min-resolution: 2dppx) and (min-device-pixel-ratio: 2)) 900px,
+                ((min-width: 768px) and (max-width: 1199px)) 354px,
+                ((min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) and (min-device-pixel-ratio: 2)) 708px,
+                (min-width: 1200px) 270px,
+                (min-width: 1200px) and (min-resolution: 2dppx) and (min-device-pixel-ratio: 2)) 540px,
+                100vw"
+                alt="Zdjecie przedstawiajace product designera"
+                />
+                <div class="our-team__description">
+                  <h3 class="our-team__description--name">John Doe</h3>
+                  <p class="our-team__description--job">Product Designer</p>
+                  <ul class="social-media">
+                    <li>
+                      <a class="social-media__icon" href="#">
+                        <svg class="social-media__icon--small">
+                          <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="social-media__icon" href="#">
+                        <svg class="social-media__icon--small">
+                          <use href="./images/icons.svg#icon-twitter"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="social-media__icon" href="#">
+                        <svg class="social-media__icon--small">
+                          <use href="./images/icons.svg#icon-facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="social-media__icon" href="#">
+                        <svg class="social-media__icon--small">
+                          <use href="./images/icons.svg#icon-linkedin"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </figure>
             </li>
             <li class="our-team__card">
+              <figure>
               <img
-                src="./images/frontend.jpg"
-                alt="Zdjecie przedstawiajace Johna Doe"
-                width="270"
-                height="260"
+              src="/images/frontend-mobile.jpg"
+              srcset="
+                ./images/frontend-mobile    450w,
+                ./images/frontend-mobile@2x.jpg 900w,
+                ./images/frontend-tablet.jpg    354w,
+                ./images/frontend-tablet@2x.jpg 708w,
+                ./images/frontend.jpg           270w,
+                ./images/frontend@2x.jpg        540w
+              "
+              sizes="
+              (max-width: 767px) 450px,
+              ((max-width: 767px) and (min-resolution: 2dppx) and (min-device-pixel-ratio: 2)) 900px,
+              ((min-width: 768px) and (max-width: 1199px)) 354px,
+              ((min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) and (min-device-pixel-ratio: 2)) 708px,
+              (min-width: 1200px) 270px,
+              (min-width: 1200px) and (min-resolution: 2dppx) and (min-device-pixel-ratio: 2)) 540px,
+              100vw"
+              alt="Zdjecie przedstawiajace product designera"
               />
               <div class="our-team__description">
                 <h3 class="our-team__description--name">John Doe</h3>
@@ -374,6 +405,7 @@
                   </li>
                 </ul>
               </div>
+            </figure>
             </li>
             <li class="our-team__card">
               <img
