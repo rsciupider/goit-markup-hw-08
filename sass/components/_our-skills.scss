@@ -1,6 +1,17 @@
 .our-skills {
-  padding-top: 0px;
-  padding-bottom: 94px;
+  // padding-top: 0px;
+  // padding-bottom: 94px;
+}
+
+.our-skills__container {
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+    padding-top: 0px;
+    padding-bottom: 94px;
+  }
 }
 
 .our-skills__headline {
