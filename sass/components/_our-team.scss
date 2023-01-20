@@ -2,8 +2,8 @@
   padding-top: 94px;
   padding-bottom: 94px;
   background-color: var(--white1-clr);
-  display:flex;
-  justify-content:center;
+  display: flex;
+  justify-content: center;
 }
 
 .our-team__headline {
@@ -16,10 +16,19 @@
 
 .our-team__workers {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  box-sizing: border-box;
+  flex-direction: column;
   gap: 30px;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+  }
 }
 
 .our-team__card {
