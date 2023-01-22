@@ -2,7 +2,7 @@
   background-color: var(--black1-clr);
   padding: 118px 0;
   background-image: linear-gradient(#2f303a66, #2f303a66),
-    url(/images/main-background-mobile.jpg);
+    url(../images/main-background-mobile.jpg);
   max-width: 1600px;
   height: 400px;
   margin: 0 auto;
@@ -13,7 +13,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     & {
-      background-image: url(/images/main-background-mobile@2x.jpg);
+      background-image: url(../images/main-background-mobile@2x.jpg);
     }
   }
 
@@ -22,12 +22,12 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(/images/main-background-tablet.jpg);
+      url(../images/main-background-tablet.jpg);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       & {
-        background-image: url(/images/main-background-tablet@2x.jpg);
+        background-image: url(../images/main-background-tablet@2x.jpg);
       }
     }
   }
@@ -39,19 +39,19 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(/images/main-background.jpg);
+      url(../images/main-background.jpg);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       & {
-        background-image: url(/images/main-background@2x.jpg);
+        background-image: url(../images/main-background@2x.jpg);
       }
     }
   }
 }
 
 .banner-section__headline {
-  display: flex;
+  // display: flex;
   flex-direction: column;
   gap: 30px;
   align-items: center;
@@ -92,4 +92,5 @@
   cursor: pointer;
   font-weight: 700;
   padding: 10px 41px;
+  margin: 0 auto;
 }
