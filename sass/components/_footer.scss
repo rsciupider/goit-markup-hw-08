@@ -1,6 +1,6 @@
 .footer {
   background: var(--black1-clr);
-  padding-block:60px;
+  padding-block: 60px;
 }
 
 .footer__bar {
@@ -157,6 +157,7 @@
   // position: absolute;
   right: 15px;
   top: 350px;
+  margin-top: 60px;
 
   @media screen and (min-width: 768px) {
     right: 155px;
@@ -171,7 +172,7 @@
     right: 15px;
     top: 0;
     margin-top: 12px;
-    padding-left:8px;
+    padding-left: 8px;
   }
 }
 
@@ -197,7 +198,7 @@
   @media screen and (min-width: 1200px) {
     flex-direction: row;
     gap: 12px;
-    justify-content:flex-start;
+    justify-content: flex-start;
   }
 }
 
@@ -210,6 +211,14 @@
   padding: 15px;
   background: var(--black1-clr);
   color: var(--white-clr);
+
+  @media screen and (min-width: 450px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 350px;
+  }
 }
 
 .footer__newsletter--button {

@@ -1,7 +1,12 @@
 .header {
-  width: 100%;
+  // width: 100%;
   // padding-inline: 15px;
   border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+  padding:15px 0;
+
+  @media screen and (min-width: 768px) {
+    padding:0;
+  }
 
   @media screen and (min-width: 1200px) {
     padding-inline: 15px;
